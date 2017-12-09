@@ -4,5 +4,5 @@
 int main(int argc, char** argv) {
   Combinator myCombinator(argv[1]);
   myCombinator.readInputFile();
-  myCombinator.printInput();
+  myCombinator.compute();
 }

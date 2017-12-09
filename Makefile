@@ -4,5 +4,14 @@ main: Combinator.o main.cpp
 Combinator.o: Combinator.cpp Combinator.hpp
 	g++ Combinator.cpp -Wall -c -std=gnu++11 -static-libstdc++
 
-run: main
+runI: main
 	Combinator-teamSorenHolm testFiles/I.txt
+
+runK: main
+	Combinator-teamSorenHolm testFiles/K.txt
+
+runS: main
+	Combinator-teamSorenHolm testFiles/S.txt
+
+runC: main
+	Combinator-teamSorenHolm testFiles/complex.txt

@@ -3,3 +3,6 @@ main: Combinator.o main.cpp
 
 Combinator.o: Combinator.cpp Combinator.hpp
 	g++ Combinator.cpp -Wall -c -std=gnu++11 -static-libstdc++
+
+run: main
+	Combinator-teamSorenHolm testFiles/I.txt
